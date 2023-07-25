@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update WhatsApp Number</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            margin-top: 50px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        
+        @media screen and (max-width: 500px) {
+            form {
+                padding: 10px;
+            }
+            input[type="text"] {
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Subscribe to WhatsApp Notifications</h1>
+    <form method="post" action="update_phone.php">
+        <label for="card_number">Card Number:</label>
+        <input type="text" id="card_number" name="card_number" required>
+        <br>
+        <label for="whatsapp_number">WhatsApp Number:</label>
+        <input type="text" id="whatsapp_number" name="whatsapp_number" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
+
