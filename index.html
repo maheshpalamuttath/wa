@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Update WhatsApp Number</title>
+    <title>Heartian Lib-Connect</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -51,7 +51,7 @@
         input[type="submit"]:hover {
             background-color: #45a049;
         }
-        
+
         @media screen and (max-width: 500px) {
             form {
                 padding: 10px;
@@ -72,12 +72,18 @@
         <label for="whatsapp_number">WhatsApp Number:</label>
         <input type="text" id="whatsapp_number" name="whatsapp_number" required>
         <br>
-        <input type="submit" value="Subscribe ">
+        <input type="submit" value="Subscribe">
     </form>
     <footer>
-    <p style="text-align: center; margin-top: 20px; color: #888;">&copy; 2023 ECLRC. All rights reserved.</p>
-</footer>
- <!-- New paragraph with additional text -->
+        <p style="text-align: center; margin-top: 20px; color: #888;">&copy; <span id="currentYear"></span> Sacred Heart College (Autonomous). All rights reserved.</p>
+    </footer>
     <p style="text-align: center; margin-top: 20px; color: #888;">Heartian Lib-Connect is the official WhatsApp aims to keep you informed about the latest happenings at the library</p>
+    <script>
+        // Get the current year
+        const currentYear = new Date().getFullYear();
+
+        // Update the content of the span element with the current year
+        document.getElementById('currentYear').textContent = currentYear;
+    </script>
 </body>
 </html>
