@@ -52,7 +52,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
         } else {
             // WhatsApp number is the same as the one already in the "phone" column
-            echo "WhatsApp number is already linked to card number $cardNumber. No change. Redirecting to the index page in 4 seconds...";
+            echo "WhatsApp number is already linked to card number<strong> $cardNumber</strong>. No change. Redirecting to the index page in 4 seconds...";
         }
         // Redirect to the index.html page after 4 seconds
         echo '<meta http-equiv="refresh" content="4;url=index.html">';
