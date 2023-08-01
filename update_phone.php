@@ -46,13 +46,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $updateSql = "UPDATE borrowers SET phone = '$whatsappNumber' WHERE cardnumber = '$cardNumber'";
 
             if ($conn->query($updateSql) === TRUE) {
-                echo "WhatsApp number updated successfully! Redirecting to the index page in 4 seconds...";
+                echo "WhatsApp number <strong>$whatsappNumber</strong> updated successfully! Redirecting to the index page in 4 seconds...";
             } else {
                 echo "Error updating record: " . $conn->error;
             }
         } else {
             // WhatsApp number is the same as the one already in the "phone" column
-            echo "WhatsApp number is already linked to card number<strong> $cardNumber</strong>. No change. Redirecting to the index page in 4 seconds...";
+            echo "WhatsApp number <strong>$whatsappNumber</strong> is already linked to card number<strong> $cardNumber</strong>. No change. Redirecting to the index page in 4 seconds...";
         }
         // Redirect to the index.html page after 4 seconds
         echo '<meta http-equiv="refresh" content="4;url=index.html">';
