@@ -57,7 +57,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Redirect to the index.html page after 4 seconds
         echo '<meta http-equiv="refresh" content="4;url=index.html">';
     } else {
-        echo "Card number not found in the borrowers table.";
+        echo "Card number not found in the borrowers table. Redirecting to the index page in 4 seconds...";
         // Redirect to the index.html page after 4 seconds
         echo '<meta http-equiv="refresh" content="4;url=index.html">';
     }
