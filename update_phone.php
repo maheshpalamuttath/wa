@@ -1,9 +1,9 @@
 <?php
 // Replace these credentials with your MySQL server details
 $servername = "localhost";
-$username = "";
-$password = "";
-$dbname = "";
+$username = "koha_library";
+$password = "koha123";
+$dbname = "koha_library";
 
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
